@@ -24,7 +24,7 @@ jobs:
       - uses: rtCamp/action-slack-notify@e31e87e03dd19038e411e38ae27cbad084a90661 # v2.3.3
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
-          SLACK_CHANNEL: proj-conda-ecosystem-sta
+          SLACK_CHANNEL: proj-conda-ecosystem-sta-internal
           SLACK_COLOR: "#7868E6"
           SLACK_MESSAGE: "Time to fill the weekly update :pencil: <${{ steps.create-issue.outputs.url }}>"
           SLACK_USERNAME: "GH-bot"
